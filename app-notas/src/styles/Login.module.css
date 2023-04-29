@@ -1,0 +1,13 @@
+
+  .notas {
+      display: flex;
+      justify-content: center;
+      color: aqua;
+  }
+.header {
+     background-color: blueviolet;
+}
+/* .btnGoogle {
+width: 50px;
+height: 100px;
+} */
