@@ -1,0 +1,127 @@
+.background {
+    background-color: #c286ba;
+    background-size: contain;
+    /* width: 100%;  */
+   height: 100vh;
+}
+
+ .titulo{
+    color: #5d066e;
+    position: relative;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: -50px 80px;
+    /* box-shadow: 2px 2px 2px #0c030b; */
+    /* border-radius: 20; */
+} 
+.lapiz {
+    height: 50px;
+    width: 50px;
+    margin: 15px 10px;
+   
+} 
+/* este es el papa de cierre y histori */
+.divlogos{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px ;   
+}
+
+.cerrarSesion {
+    background-color:  #c286ba;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    margin: 15px 10px;
+}
+
+.histor{
+    height: 50px;
+    width: 50px;
+    margin: -45px 1170px; 
+    cursor: pointer;
+    background-color: #F23D4C;
+}
+
+.guardar{
+    background-color: #942285;
+    border: 0.5px solid #f23dbc;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    width: 70px;
+    height: 40px;
+    margin-left:170px;
+    margin-top: 50px;
+    cursor: pointer;
+  
+}
+.divnota { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f812d2;
+    border-color: #cf12a0;
+    border-radius: 10px;
+    width: 400px;
+    height: 380px;
+    box-shadow: 5px 5px 5px #e26bd2;
+    margin: 10px 300px;
+   
+} 
+.container {
+    position: relative;
+    left: 210px;
+    top: 50px;
+}
+
+.tituloNota {
+    left: 200px;
+    top: -30px;
+    background-color: #fa9ee3;
+    border: 5px solid #4b0a42;
+    border-radius: 15px;
+    width: 350px;
+    height: 60px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 1px 0px 20px;
+   
+    
+    
+}
+
+.descripcionNota {
+    background-color: #fa9ee3;
+    border: 5px solid #4b0a42;
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px 0px -160px 20px;
+    top: -50px;
+
+} 
+.dibujo{
+    height: 55px;
+    width: 55px;
+    /* margin: 15px 10px; */
+    position: relative;
+    left: 320px;
+    top: 80px;
+
+   
+}
+
+
+
+
+.btnUp>img {
+    margin: 10px -70px 0 90px;
+    width: 25px;
+    
+} 

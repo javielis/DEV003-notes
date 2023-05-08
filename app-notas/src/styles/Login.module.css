@@ -1,13 +1,54 @@
-
-  .notas {
-      display: flex;
-      justify-content: center;
-      color: aqua;
-  }
-.header {
-     background-color: blueviolet;
+.background {
+  background-color: #c286ba;
+  background-size: contain;
+  /* width: 100%;  */
+ height: 100vh;
 }
-/* .btnGoogle {
-width: 50px;
-height: 100px;
+
+  
+ /* .contenedor {
+     background-image: url('../../public/img/fondo.jpg');
+     color: rgb(167, 19, 80);
 } */
+.btnGoogle {
+  background-image: url('../../public/img/google.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+} 
+ /* .Contenedor {
+  display: flex; 
+  position: relative; 
+  left: 300px;
+  top: 100px; */
+#ContenedorIndex{
+  display: flex; 
+  position: relative; 
+  left: 300px;
+  top: 100px
+}
+
+ 
+
+
+
+.correo {
+display: flex;
+
+
+
+} 
+.contraseña {
+display: flex;
+}
+
+.imputcorreo {
+
+display: flex;
+
+} 
+.imputcontraseña {
+
+display: flex;
+}

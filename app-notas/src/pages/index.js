@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import Image from 'next/image'
-import google from '../../public/img/google.png'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Login.module.css'
-import handleBotonClick from './RegistroCorreo'
+// import handleBotonClick from './RegistroCorreo'
 // import GoogleAuthProvider from '../firebase/auth'
 import { registerGoogle } from '../firebase/auth'
 import { useState } from "react"
@@ -49,10 +48,11 @@ export default function Login() {
   return (
     
     <>
-    
-    <Image alt='Fondo' 
+  
+
+   <Image alt='Fondo' 
     src='/img/fondo.jpg'
-    width={700}
+    width={750}
     height={480}
     sizes='100vw'
     style={{
@@ -60,12 +60,14 @@ export default function Login() {
       position: 'fixed',
       width: '100%',
       height: '100vh',
+      
     }}></Image>
     <div className={styles.container}>
       <header className={styles.header} style={{
          display: 'flex',
          alignItems: 'center',
          justifyContent: 'center'
+        
         }}>
         <Image className={styles.img} alt="" />
       <h1 className={styles.notas}> NOTAS </h1> 
@@ -77,29 +79,32 @@ export default function Login() {
       alignItems: 'center',
       width: '100%',
       height: '100vh'
+      
+      
      
     }}>
-        <form className='flex flex-col'>
-          <label className={styles.label} htmlFor="user"> Email:{" "}</label>
+       
+        <div className='Contenedor'>
+          <label className={styles.correo} htmlFor="user"> Email:{" "}</label>
           <input
-            className={styles.input} type="text" id="first" name="user" placeholder="**********"
+            className={styles.inputcorreo} type="text" id="first" name="user" placeholder="**********"
             onChange={(e) => setEmail(e.target.value)}required
           />
 
-          <label className={styles.label} htmlFor="Password"> Password:{" "} </label>
-          <input className={styles.input}type="password" id="last" name="password"placeholder="********"
+          <label className={styles.contraseña} htmlFor="Password"> Password:{" "} </label>
+          <input className={styles.inputcontraseña}type="password" id="last" name="password"placeholder="********"
             onChange={(e) => setPassword(e.target.value)}required
           />
 
-           <button onClick={handleLogin} type="submit" className={styles.btnLogin} >login</button>
+           <button onClick={handleLogin} type="submit" className={styles.btnLogin} >Ingresar</button>
            
-         </form>
+         </div>
          <div className={styles.containerGoogle}>
           <button  onClick={google} type="button" className={styles.btnGoogle}><img className={styles.ahref} href="/registro" src="google" alt="" >
-            </img>Sign in with Google</button>
+            </img></button>
          
          </div>
-         <a className={styles.ahref} href="/registro"> Registrate aquí </a>
+         <button className={styles.ahref}  href="/registro"> Registrate </button>
         </div>
          
 
