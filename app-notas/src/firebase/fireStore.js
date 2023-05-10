@@ -1,10 +1,13 @@
-import {getFirestore,addDoc, collection,doc,getDoc, deleteDoc, updateDoc, } from 'firebase/firestore';
+
+import { deleteDoc, updateDoc } from 'firebase/firestore';
+import { auth } from "../firebase/fireconfi";
+import {getFirestore,addDoc, collection,doc,getDoc, } from 'firebase/firestore';
   
 
 
 
 
-  import { app } from "./fireconfi";
+  import { app } from "../firebase/fireconfi";
   // -------------Función para identificar el usuario------------
   const db = getFirestore(app);
   
@@ -27,7 +30,7 @@ import {getFirestore,addDoc, collection,doc,getDoc, deleteDoc, updateDoc, } from
   export const deleteNote = (content) => deleteDoc(doc(db, 'notes', content));
   
   // Función para editar post
-  export const editDoc = (docId, postUser) => updateDoc(doc(db, 'posts', docId), { postUser });
-  
+  // export const editDoc = (docId, postUser) => updateDoc(doc(db, 'posts', docId), { postUser });
+  export const editNote = (noteId, title, description) => updateDoc(doc(db, 'notes', noteId), { title, description });
   export const getNote = (content) => getDoc(doc(db, 'notes', content));
   

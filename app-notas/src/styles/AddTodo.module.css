@@ -70,7 +70,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
     cursor: pointer;
-    /* margin: 20px 50px 10px 50px; */
+   margin: 20px 50px 10px 50px;
 }
 
 .date {
@@ -147,4 +147,4 @@
         margin: -10px 0 80px 47px;
     }
 
-}
+} 

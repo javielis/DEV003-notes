@@ -51,7 +51,7 @@ export default function Login() {
   
 
    <Image alt='Fondo' 
-    src='/img/fondo.jpg'
+    src='/img/fondo2.jpg'
     width={750}
     height={480}
     sizes='100vw'

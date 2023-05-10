@@ -38,7 +38,7 @@ export default function Dashboard() {
 
   const handleSignOut = () => {
     logOut().then(() => {
-      router.push('/index')
+      router.push('/Index')
     });
   }
   return (
